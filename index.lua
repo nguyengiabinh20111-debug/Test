@@ -1,6 +1,6 @@
 -- ============================================================================
 -- atras | Steal An Egg (PlaceId: 107778070777162)
--- 100% Standalone VN HUB Script | Tự Động Lưu Cài Đặt
+-- 100% Standalone atras HUB Script | Tự Động Lưu Cài Đặt
 -- ============================================================================
 pcall(function()
 local oldFiles = {
@@ -21,13 +21,13 @@ pcall(function() table.insert(roots, gethui()) end)
 end
 for _, r in ipairs(roots) do
 for _, child in ipairs(r:GetChildren()) do
-if child:IsA("ScreenGui") and (child.Name == "VNHUB_CustomUI" or child.Name == "VNHUB_GUI" or child.Name == "ToggleUIButton") then
+if child:IsA("ScreenGui") and (child.Name == "atras_CustomUI" or child.Name == "atras_GUI" or child.Name == "ToggleUIButton") then
 pcall(child.Destroy, child)
 end
 end
 end
 end)
-local __VNHUB_VI = {
+local __atras_VI = {
 -- 7 Main Tabs
 ["Steal"] = "Trộm Trứng",
 ["Farm"] = "Tự Động Farm",
